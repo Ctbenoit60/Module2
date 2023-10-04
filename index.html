@@ -25,7 +25,8 @@
         <a href="/form.html">Form</a>
       </nav>
     </header>
-    <h1>"My HTML learning journey"</h1>
+    <main>
+        <h1>"My HTML learning journey"</h1>
     <!-- Element practice -->
     <article>
         <h2>Learning elements - div, span, p, pre, ul, li, ol, article"</h2>
@@ -56,24 +57,53 @@
         <h2>HTML elements - Tables - table, thead, tbody, tr, td, th</h2>
         <table>
             <thead>
-                <th colspan="2">
-                    <tr>
-                        <td> </td>
-                        <td>Dog</td>
-                        <td>Cat</td>
-                        <td>Bunny</td>
-                    </tr>
-                </th>
+                <tr>
+                    <th colspan="2">Dog</th>
+                    <th>Cat</th>
+                    <th>Bunny</th>
+                </tr>
             </thead>
+            <tbody>
+                <tr>
+                    <td>First Pet </td>
+                    <td>Ellie</td>
+                    <td>Scatty</td>
+                    <td>Petra</td>
+                </tr>
+            </tbody>
+            
+        </table>
+        <br>
+        <table>
+            <!-- <thead> -->
             <tr>
-                <td>First Pet </td>
-                <td>Ellie</td>
-                <td>Scatty</td>
-                <td>Petra</td>
+                <th colspan="2">First header</th>
+                <th>Second header</th>
+            </tr>
+            <!-- </thead> -->
+            <tr>
+                <td>First cell - first row</td>
+                <td rowspan="10" >Second cell - first row</td>
+                <td>Third cell - first row</td> 
+                <!-- rowspan isn't working -->
             </tr>
         </table>
+        
     </article>
-    <main>
+    <article>
+        <h2>V. HTML elements - img, video, audio </h2>
+        <!-- image practice -->
+        <img src="https://picsum.photos/200/300" alt="river" />
+
+        <video width="500" controls>
+            <source src="/media/cc0-videos/flower.webm"
+                    type="video/webm">
+            <source src="/media/cc0-videos/flower.mp4"
+                    type="video/mp4">
+            Sorry, your browser doesn't support embedded videos.
+        </video>
+        
+    </article>
     </main>
     <footer>Copyright 2021 &copy;</footer>
   </body>
