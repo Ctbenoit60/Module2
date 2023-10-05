@@ -83,7 +83,7 @@
             <!-- </thead> -->
             <tr>
                 <td>First cell - first row</td>
-                <td rowspan="10" >Second cell - first row</td>
+                <td rowspan="4" >Second cell - first row</td>
                 <td>Third cell - first row</td> 
                 <!-- rowspan isn't working -->
             </tr>
@@ -95,14 +95,23 @@
         <!-- image practice -->
         <img src="https://picsum.photos/200/300" alt="river" />
 
-        <video width="500" controls>
-            <source src="/media/cc0-videos/flower.webm"
-                    type="video/webm">
-            <source src="/media/cc0-videos/flower.mp4"
-                    type="video/mp4">
+        <video width="250" controls autoplay>
+            <source src="/media/cc0-videos/flower.webm" type="video/webm" />
+
+            <source src="/media/cc0-videos/flower.mp4" type="video/mp4" />
+
+            <source src="IMG_0501.MOV" type="video/mp4"/>
             Sorry, your browser doesn't support embedded videos.
         </video>
-        
+
+        <audio
+             controls 
+             src="/media/cc0-audio/t-rex-roar.mp3">
+             Your browser does not support the
+             <code>audio</code> element.
+    
+</audio>
+
     </article>
     </main>
     <footer>Copyright 2021 &copy;</footer>
