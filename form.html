@@ -7,6 +7,11 @@
     <meta name="author" content="Christina Stutes">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>    
   </head>
   <body>
     <header>
@@ -16,6 +21,38 @@
       </nav>
     </header>
     <main>
+        <!-- VI. HTML elements - Forms - form, input, label, select, option, button -->
+       <div style="margin: 10px 0px 10px 0px;" >
+        <form method="POST" action="http://localhost:3000/profile">
+            <label for="firstname">First Name:</label>
+            <input type="text" id="firstname"> <br>
+            <label for="lastname">Last Name:</label>
+            <input type="text" id="lastname"> <br>
+        </form>
+       </div>
+        
+        <div style="margin: 10px 0px 10px 0px;">
+           <table>
+            <tr>
+                <th colspan="2">CheckBox</th>
+            </tr>
+            <tr>
+                <td ><input type="radio"> Apples</td>
+                <td ><input type="radio"> Oranges</td>
+            </tr>
+           </table>
+            
+        </div>
+
+        <form action="dropdown">
+            <label for="fruit">Choose Fruit</label>
+            <select name="Fruit" id="fruit">
+                <option value="apple">Apple</option>
+                <option value="oranges">Oranges</option>
+            </select>
+            <button type="submit">Submit form</button>
+        </form>
+    
     </main>
     <footer>Copyright 2021 &copy;</footer>
   </body>
